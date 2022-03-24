@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Loops</h1>
+</body>
+<script>
+    for(let i=0;i<5;i++){
+        console.log(i);
+    }
+
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            console.log(i+""+j);
+        }
+    }
+
+    const person = {fname:"John", lname:"Doe", age:25};
+
+    let text = "";
+    for (let x in person) {
+    text = text + person[x];
+    }
+    console.log(text);
+
+    const numbers = [45, 4, 9, 16, 25];
+
+    let txt = "";
+    for (let x in numbers) {
+    txt += numbers[x];
+    }
+    console.log(txt);
+
+    const arr = new Array(1,2)
+    let txt1 = "";
+    arr.forEach(myFunction);
+    function myFunction(value, index, array) {
+    txt1 += value;
+    console.log(txt1)
+    }
+
+    const cars = ["BMW", "Volvo", "Mini"];
+
+    let text1 = "";
+    for (let x of cars) {
+    text1 += x;
+    console.log(text1)
+    }
+
+    let language = "JavaScript";
+
+    let text2 = "";
+    for (let x of language) {
+    text2 += x;
+    console.log(text2)
+    
+}
+</script>
+</html>

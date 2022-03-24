@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Objects</h1>
+</body>
+<script>
+    const person1 = {
+    firstName: "Motu",
+    lastName: "Patlu",
+    age: 25,
+    eyeColor: "brown"
+    };
+    console.log(person1.eyeColor);
+    console.log(person1.age);
+
+    const person2 = {
+    firstName: "Pasha",
+    lastName : "Bulla",
+    id       : 5566,
+    fullName : function() {
+    return this.firstName + " " + this.lastName;
+    }
+    };
+    console.log(person2.fullName());
+</script>
+</html>
